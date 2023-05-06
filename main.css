@@ -1,0 +1,182 @@
+:root {
+	--color1: #dd404d; /* red */
+	--color2: #ffeae6; /* light crimson */
+	--color3: #06061a; /* dark purple */
+	--color4: #191936; /* light purple */
+	--color5: #000000; /* black color */
+	--color6: #fefefe; /* white color */
+	--color7: #afafaf; /* gray color */
+}
+
+body {
+	margin: 0;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.text-red {
+	color: var(--color1);
+}
+
+.text-mute {
+	color: var(--color7);
+}
+
+.btn {
+	text-decoration: none;
+	color: var(--color5);
+	background-color: var(--color1);
+	padding: 18px 36px;
+	font-weight: 600;
+}
+
+.header {
+	background-color: var(--color6);
+	display: flex;
+	flex-direction: column;
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 30px 20px 30px 20px;
+}
+
+.main-navbar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.brand {
+	text-transform: uppercase;
+}
+
+#brand{
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	
+}
+
+.navbar ul li {
+	margin-left: 36px;
+}
+
+a{
+	color: #000000;
+}
+.li-items-link{
+	display: block;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 10px;
+}
+.li-items :hover{
+	background-color: #dd404d;
+}
+
+.header-hero {
+	display: flex;
+	padding:100px 0 0 0;
+}
+
+.hero-description {
+	flex: 1;
+}
+
+/* .top-button-container {
+	display: flex;
+	flex-direction: column;
+} */
+
+.text-mute{
+	padding: 10px 0 20px 0;
+}
+
+.hero-img {
+	flex: 1;
+}
+
+.hero-img img {
+	width: 100%;
+	
+}
+
+.about {
+	max-width: 1140px;
+	margin: 0 auto;
+	display: flex;
+	background-color: var(--color2);
+	padding: 20px;
+}
+
+.about-description {
+	flex: 1;
+	padding: 20px;
+}
+
+.about-social-links {
+	margin-top: 50px;
+	padding: 0px;
+	display: flex;
+}
+
+/* .about-social-links .btn{
+	
+} */
+
+.about-timeline {
+	flex: 1;
+}
+
+.work {
+	background-color: var(--color6);
+	display: flex;
+	flex-direction: column;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.work-title {
+	padding: 20px;
+}
+
+.connect {
+	max-width: 1140px;
+	margin: 0 auto;
+	display: flex;
+	background-color: var(--color2);
+	padding: 20px;
+	flex-direction: column;
+
+}
+
+.dash{
+	display: inline-block;
+    width: 80px;
+    height: 5px;
+    background: var(--color1);
+    margin-right: 10px;
+}
+.small-dash{
+	display: inline-block;
+    width: 30px;
+    height: 5px;
+    background: var(--color1);
+    margin-right: 10px;
+}
+
+.work-content{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 412px) {
+	.btn {
+		padding: 12px 24px;
+	}
+	.hero-img img {
+		display: none;
+	}
+}
